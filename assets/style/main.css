@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+:root {
+  --accent-color: #0071ff;
+  --font-family: Poppins, "Segoe UI", sans-serif;
+}
+body {
+  font-family: var(--font-family) !important;
+}
+.navbar-brand {
+  transition: 250ms ease-in-out;
+}
+.icon {
+    color: #11121a;
+    font-size: 2rem;
+    max-width: 70px;
+    transition: 250ms ease-in-out;
+}
+.navbar-brand:hover, .icon:hover {
+    color: var(--accent-color);
+}
+.icon a {
+    color: inherit;
+    text-decoration: none;
+}
+section .row {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+.image {
+    box-shadow: 4px 7px 7px 0px #00000042;
+    transition: 400ms;
+}
+.image:hover {
+    transform: scale(1.03) !important;
+}
+.home-image {
+    transition: 400ms;
+}
+.home-image:hover {
+    filter: grayscale(1);
+}
